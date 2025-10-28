@@ -16,3 +16,8 @@ scoreboard objectives remove randSpawn
 ## TODO:
 # hier wordt zowel het einde van het event afgehandeld als de cleanup. best om deze in 2 functies te splitsen. Deze functie kan de uninstall wel triggeren via een "function" command.
 # execute "as @a" is enkel relevant als de speler effectief iets moet uitvoeren. Een partical gebeurd in de wereld, niet in de UI, dus is "as" overbodig.
+
+
+gamerule allowEnteringNetherUsingPortals true
+gamerule playersSleepingPercentage 33
+gamerule doInsomnia true

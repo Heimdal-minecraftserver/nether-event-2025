@@ -20,3 +20,5 @@ function nether-event:clock/convert_time
 
 ## Disable Nether portal travel during the event
 gamerule allowEnteringNetherUsingPortals false
+gamerule playersSleepingPercentage 100
+gamerule doInsomnia false

@@ -7,7 +7,6 @@ scoreboard players set .fogPhase nether_event 2
 
 ## Announce fog phase 2 to participants
 title @a[tag=nether_event_2025] title {"text":"The fog spreads...","color":"dark_gray"}
-playsound minecraft:ambient.nether_wastes.additions master @a[tag=nether_event_2025] ~ ~ ~ 1 0.7
 
 # Weather change to heavy rain
 weather rain 7d
