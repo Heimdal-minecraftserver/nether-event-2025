@@ -1,17 +1,16 @@
-# Set global fog progress to phase 2
-scoreboard players set global fogProgress 2
-title @a title {"text":"The fog spreads...","color":"dark_gray"}
-playsound minecraft:ambient.nether_wastes.additions master @a ~ ~ ~ 1 0.7
-
-# Clear any existing fog pulses
+# Start Nether fog phase 2
+## Clear previous fog pulse schedule
 schedule clear nether-event:fog/phase1_loop
 
+## Set fog phase to 2
+scoreboard players set .fogPhase nether_event 2
+
+## Announce fog phase 2 to participants
+title @a[tag=nether_event_2025] title {"text":"The fog spreads...","color":"dark_gray"}
+playsound minecraft:ambient.nether_wastes.additions master @a[tag=nether_event_2025] ~ ~ ~ 1 0.7
+
 # Weather change to heavy rain
-weather rain
+weather rain 7d
 
 # Stronger fog pulse (particles and effects)
 function nether-event:fog/phase2_loop
-
-## TODO:
-#specificieer @a met de tag.
-#specifieer hoe lang thunder moet duren tenzij je dat aan de game zelf wil overlaten.
