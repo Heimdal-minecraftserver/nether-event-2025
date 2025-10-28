@@ -15,5 +15,4 @@ function nether-event:fog/phase1
 
 
 ## TODO:
-#laat deze functie starten door een advancement met een tick trigger.
 #laat deze functie "nether-event:fog_phase1" éénmalig starten, afhankelijk van of de fase al gestart is volgens een scoreboard.

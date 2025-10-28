@@ -1,5 +1,5 @@
 {
   "values": [
-    "nether-event:load"
+    "nether-event:setup/load"
   ]
 }
