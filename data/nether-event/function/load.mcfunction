@@ -12,6 +12,8 @@ execute if score $phase fogProgress matches 1 run schedule function nether-event
 execute if score $phase fogProgress matches 2 run schedule function nether-event:fog/phase2_loop 10s replace
 execute if score $phase fogProgress matches 3 run schedule function nether-event:fog/phase3_loop 10s replace
 
+gamerule allowEnteringNetherUsingPortals false
+
 ## TODO:
 #Scoreboards met maar 1 speler zijn kinda useless zeker als al u scoreboards maar 1 speler hebben. best om ze in 1 scoreboard te stoppen, met verschillende spelers die dan het onderscheid maken.
 #"$phase" wordt alleen in deze file vermeld, de functies doen dus niets.

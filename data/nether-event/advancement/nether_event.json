@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "nether_event": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "nether-event:start_event"
+  }
+}
