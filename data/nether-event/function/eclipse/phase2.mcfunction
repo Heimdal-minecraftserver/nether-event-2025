@@ -8,7 +8,7 @@ execute at @a run particle minecraft:flame ~ ~1 ~ 4 2 4 0.05 300
 weather thunder
 
 # Clear existing eclipse loop
-schedule clear nether-event:eclipse_loop
+schedule clear nether-event:eclipse/loop
 
 # Fire eruption near players
 execute as @a at @s run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 minecraft:fire replace minecraft:air

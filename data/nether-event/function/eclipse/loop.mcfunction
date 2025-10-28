@@ -11,7 +11,7 @@ execute as @a at @s run particle minecraft:ash ~ ~1 ~ 3 2 3 0.05 120
 
 # === Randomized mob spawns ===
 # Only spawn if there’s no overcrowding nearby
-execute as @a at @s unless entity @e[type=!player,distance=..10] run function nether-event:eclipse_spawn_wave
+execute as @a at @s unless entity @e[type=!player,distance=..10] run function nether-event:eclipse/spawn_wave
 
 # === Rare lightning effect ===
 execute if predicate nether-event:random_50 run scoreboard players set $rand randLightning 1
@@ -33,7 +33,7 @@ execute if score $rand randLightning matches 7 run summon lightning_bolt ~0 ~ ~-
 execute if score $rand randLightning matches 8 run summon lightning_bolt ~5 ~ ~-5
 
 # === Schedule next loop ===
-schedule function nether-event:eclipse_loop 30s
+schedule function nether-event:eclipse/loop 30s
 
 ## TODO:
 #specificeer @a met de tag.

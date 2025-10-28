@@ -8,9 +8,9 @@ scoreboard objectives add randSpawn dummy "Random Mob Spawn"
 
 ## Restart any active fog loops on server restart
 # If any fog phase is active, restart the fog loop
-execute if score $phase fogProgress matches 1 run schedule function nether-event:fog_phase1_loop 10s replace
-execute if score $phase fogProgress matches 2 run schedule function nether-event:fog_phase2_loop 10s replace
-execute if score $phase fogProgress matches 3 run schedule function nether-event:fog_phase3_loop 10s replace
+execute if score $phase fogProgress matches 1 run schedule function nether-event:fog/phase1_loop 10s replace
+execute if score $phase fogProgress matches 2 run schedule function nether-event:fog/phase2_loop 10s replace
+execute if score $phase fogProgress matches 3 run schedule function nether-event:fog/phase3_loop 10s replace
 
 ## TODO:
 #Scoreboards met maar 1 speler zijn kinda useless zeker als al u scoreboards maar 1 speler hebben. best om ze in 1 scoreboard te stoppen, met verschillende spelers die dan het onderscheid maken.

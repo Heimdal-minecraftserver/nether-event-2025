@@ -1,4 +1,6 @@
 title @a title {"text":"Something feels wrong...","color":"gray"}
+title @a subtitle {"text":"The Nether is calling...","color":"red"}
+
 playsound minecraft:ambient.cave master @a ~ ~ ~ 1 0.8
 
 gamerule allowEnteringNetherUsingPortals false
