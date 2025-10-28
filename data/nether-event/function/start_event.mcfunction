@@ -11,4 +11,3 @@ execute unless entity @s[tag=nether_event_2025] run tag @s add nether_event_2025
 
 ## Start the first fog phase
 execute if score .fogPhase nether_event matches 0 run schedule function nether-event:fog/phase1 60s
-scoreboard players set .fogPhase nether_event 1

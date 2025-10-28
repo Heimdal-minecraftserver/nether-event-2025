@@ -12,16 +12,16 @@ scoreboard players add .amountLightning nether_event_spawn 0
 scoreboard players add .amountMobs nether_event_spawn 0
 scoreboard players add .typeMob nether_event_spawn 0
 
-## Create a clock scoreboard to manage timed events
-scoreboard objectives add nether_event_clock dummy "Nether Event Clock"
-scoreboard players add .tick nether_event_clock 0
-scoreboard players add #tick nether_event_clock 20
-scoreboard players add .second nether_event_clock 0
-scoreboard players add #second nether_event_clock 60
-scoreboard players add .minute nether_event_clock 0
+scoreboard objectives add nether_event_time_tracker dummy "Nether Event Time Tracker"
+scoreboard players add .currentTime nether_event_time_tracker 0
+scoreboard players add .timeToAdd nether_event_time_tracker 0
+scoreboard players set #cycle nether_event_time_tracker 24000
+scoreboard players set #targetTime nether_event_time_tracker 13000
 
-## Convert time to minutes on load
-function nether-event:clock/convert_time
+execute if score .fogPhase nether_event matches 1 run function nether-event:fog/phase1_loop
+execute if score .fogPhase nether_event matches 2 run function nether-event:fog/phase2_loop
+execute if score .fogPhase nether_event matches 3 run function nether-event:fog/phase3_loop
+execute if score .eclipsePhase nether_event matches 1 run function nether-event:eclipse/loop
 
 ## Disable Nether portal travel during the event
 gamerule allowEnteringNetherUsingPortals false

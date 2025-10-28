@@ -12,7 +12,7 @@ execute at @a[tag=nether_event_2025] run particle minecraft:explosion_emitter ~ 
 execute at @a[tag=nether_event_2025] run particle minecraft:flame ~ ~1 ~ 4 2 4 0.05 300
 
 ## Fire eruption near players
-execute as @a[tag=nether_event_2025] run function nether-event:eclipse/spawn_fire
+execute as @a[tag=nether_event_2025] run function nether-event:eclipse/helpers/spawn_fire
 
 ## Schedule end event after 60 seconds
 schedule function nether-event:end_event 60s

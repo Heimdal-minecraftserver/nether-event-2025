@@ -12,7 +12,11 @@ playsound minecraft:entity.warden.ambient ambient @a[tag=nether_event_2025] ~ ~ 
 
 # Set time to late night and stop daylight cycle
 weather thunder
-time set 13000
+
+## set time to dusk
+data modify storage minecraft:macro time_tracker set value {"time_to_add": 0}
+function nether-event:fog/helpers/calculate_time_until_dusk
+
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 
