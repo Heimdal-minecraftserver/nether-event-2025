@@ -8,10 +8,6 @@ gamerule doDaylightCycle true
 # Calm lingering fog
 execute as @a at @s run particle minecraft:ash ~ ~1 ~ 2 1 2 0.02 50
 
-scoreboard objectives remove fogProgress
-scoreboard objectives remove eclipseStage
-scoreboard objectives remove randLightning
-scoreboard objectives remove randSpawn
 
 ## TODO:
 # hier wordt zowel het einde van het event afgehandeld als de cleanup. best om deze in 2 functies te splitsen. Deze functie kan de uninstall wel triggeren via een "function" command.
@@ -21,3 +17,7 @@ scoreboard objectives remove randSpawn
 gamerule allowEnteringNetherUsingPortals true
 gamerule playersSleepingPercentage 33
 gamerule doInsomnia true
+gamerule doDaylightCycle true
+gamerule doWeatherCycle true
+
+function nether-event:eclipse/helpers/clear_fire

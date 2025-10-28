@@ -11,9 +11,10 @@ playsound minecraft:entity.warden.ambient ambient @a[tag=nether_event_2025] ~ ~ 
 
 
 # Set time to late night and stop daylight cycle
-weather thunder 7d
+weather thunder
 time set 13000
 gamerule doDaylightCycle false
+gamerule doWeatherCycle false
 
 # Start the repeating deep fog loop
 function nether-event:fog/phase3_loop

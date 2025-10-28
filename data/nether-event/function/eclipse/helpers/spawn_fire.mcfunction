@@ -1,0 +1,9 @@
+summon block_display ~-1 ~ ~-1 {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~-1 ~ ~ {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~-1 ~ ~1 {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~ ~ ~-1 {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~ ~ ~ {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~ ~ ~1 {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~1 ~ ~-1 {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~1 ~ ~ {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}
+summon block_display ~1 ~ ~1 {block_state:{Name:"minecraft:fire"}, Tags:["eclipse_fire"]}

@@ -7,6 +7,11 @@ scoreboard objectives add nether_event dummy "Nether Event Status"
 scoreboard players add .fogPhase nether_event 0
 scoreboard players add .eclipsePhase nether_event 0
 
+scoreboard objectives add nether_event_spawn dummy "Nether Event RNG"
+scoreboard players add .amountLightning nether_event_spawn 0
+scoreboard players add .amountMobs nether_event_spawn 0
+scoreboard players add .typeMob nether_event_spawn 0
+
 ## Create a clock scoreboard to manage timed events
 scoreboard objectives add nether_event_clock dummy "Nether Event Clock"
 scoreboard players add .tick nether_event_clock 0
