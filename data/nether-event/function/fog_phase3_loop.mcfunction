@@ -7,3 +7,7 @@ execute as @a at @s run particle minecraft:ash ~ ~1 ~ 3 2 3 0.03 150
 
 # Reschedule every 2 minutes
 schedule function nether-event:fog_phase3_loop 180s
+
+## TODO:
+#specificeer @a met de tag
+# execute "as @a" is enkel relevant als de speler effectief iets moet uitvoeren. Een partical gebeurd in de wereld, niet in de UI, dus is "as" overbodig.

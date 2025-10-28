@@ -19,3 +19,8 @@ gamerule allowEnteringNetherUsingPortals true
 # Schedule cleanup sunrise
 schedule function nether-event:cleanup 60s
 
+## TODO:
+# execute "as @a" is enkel relevant als de speler effectief iets moet uitvoeren. Een partical gebeurd in de wereld, niet in de UI, dus is "as" overbodig.
+#sound command worden geluiden best gelinkt aan de categorie waar ze bij horen, spelers zetten geluiden volgens hun settings. Bij "master" wordt dit gelinkt aan de global sounds, in de plaats daarvan zou ik hem op "ambient" zetten aangezien dat het type sound is dat je wilt bereiken.
+#specifieer hoe lang thunder moet duren tenzij je dat aan de game zelf wil overlaten.
+#Voor de "fire eruption" zou ik een fire entity summonen in plaats van een fill, fill is nogal heavy als dat voor alle spelers op de server is en heeft ook effect op andere entities zoal animals of items op de grond.

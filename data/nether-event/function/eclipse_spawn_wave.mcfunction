@@ -65,3 +65,12 @@ execute if predicate nether-event:random_50 run summon zombified_piglin ~10 ~0 ~
 execute if predicate nether-event:random_33 run summon skeleton ~-10 ~0 ~3
 execute if predicate nether-event:random_25 run summon spider ~5 ~0 ~10
 
+## TODO:
+#Line 7-14 komen 3 keren voor in deze functie, 1 keer is voldoende normaal.
+#Al deze code wordt zo goed als tergelijk gerund, lijkt me heel heavy, kan deze opgesplitst worden in meerdere functies?
+#"$" worden normaal gebruikt om macro's aan te duiden, wat hier niet het geval is. best een ander teken gebruiken om aan te duiden dat het niet om een echte speler gaat.
+#Bij het activeren van deze functie sordt gespecificeerd dat de speler zelf deze commands moet uitvoeren, ik zie wel niet metteen waarom dat zo is aangezien met fake players wordt gewerkt die de scores voor alle spelers bepalen. Om je functie meer foolproof te maken zou ik met de speler als reference werken in plaats van de fake player.
+# Score setting en summon staan best in twee apparte functies.
+
+##Randomisation:
+#Ik vermoed dat de randomisation van de hostiles beter kan werken via macro's en de /random command https://minecraft.wiki/w/Commands/random. Als je die gebruikt voor zowel aantal als positie kan je deze functie een stuk korter maken.

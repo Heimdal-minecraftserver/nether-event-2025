@@ -11,3 +11,7 @@ weather rain
 
 # Stronger fog pulse (particles and effects)
 function nether-event:fog_phase2_loop
+
+## TODO:
+#specificieer @a met de tag.
+#specifieer hoe lang thunder moet duren tenzij je dat aan de game zelf wil overlaten.
