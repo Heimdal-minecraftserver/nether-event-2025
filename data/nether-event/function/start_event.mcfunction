@@ -10,9 +10,4 @@ playsound minecraft:ambient.cave ambient @s ~ ~ ~ 1 0.8
 execute unless entity @s[tag=nether_event_2025] run tag @s add nether_event_participant
 
 ## Start the first fog phase
-function nether-event:fog/phase1
-
-
-
-## TODO:
-#laat deze functie "nether-event:fog_phase1" éénmalig starten, afhankelijk van of de fase al gestart is volgens een scoreboard.
+execute if score .fogPhase nether_event matches 0 run schedule function nether-event:fog/phase1 60s
